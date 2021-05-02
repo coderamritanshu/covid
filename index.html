@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+       <style>
+        *{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-size:1.2rem;
+  font-weight:400;
+  color:#fff;
+  background:linear-gradient(310deg, orange, blue, green,red);
+}
+
+a{
+ color:black;
+ text-decoration: none;
+ margin-left: 10px;
+}
+
+body::before{
+  position:fixed;
+  top:0;
+  left:0;                                           
+  height:100%;
+  width:100%;
+  z-index:-1;
+}
+
+
+h1{
+  font-weight:700; 
+  padding:0 6rem;
+  margin-bottom:1.875rem;
+}
+p{
+  font-size:1.5rem;
+}
+
+h1,p{
+  margin:0;
+  margin-bottom:0.5rem;
+}
+
+label{
+  display:flex; 
+  align-items:center;
+  font-size:1.25rem;
+  margin-bottom:0.5rem;
+}
+
+
+form{
+background: -webkit-radical-gradient(red,blue, green);  
+background: radical-gradient(red,blue, green); 
+background-size:100% 100%;
+background-repeat:no-repeat;
+padding:2.5rem 0.625rem;
+border-radius:0.25rem;
+}
+h2{
+    background-color: #000;
+}
+
+       </style>
+    </head>
+    <body>
+        <div>
+ 
+<h1 id="title">Twitter Search for COVID-19</h1>
+ 
+  <hr/>
+<a href="https://covid19-twitter.in/#frequent-searches">Frequently Searched Cities</a>
+<hr/>
+  <h2>Tips :</h2>
+  <ol type="1">
+  <li><b>Do NOT make advanced payments unless you are 100% sure about their authenticity</b></li>
+  <br/>
+  <li>Check for replies under the tweets</li>
+  <br/>
+  <li>Make sure search results are sorted by "Latest"
+  <br/>  <br/> <img src="https://covid19-twitter.in/sort-click-here.jpg" width="50%" height="40%"/>
+  </li>
+  </ol>
+  <hr/>
+  <form>
+   <h2 align="left">Search</h2> 
+    <div>
+     <label id="name-label" for="name">Name of the city</label>
+      <input type="text" required name="name"  id="name" placeholder="Name of the city"  >
+   </div>
+  
+    <div>
+  <label>
+    <input type="checkbox"  value="Beds" />Beds</label>
+  <label>
+    <input type="checkbox"  value="Oxygen" />Oxygen</label>
+     <label>
+       <input type="checkbox"  value="Tests"/>Tests</label>
+      <label>
+        <input type="checkbox"  value="Remdesivir">Remdesivir</label>
+       <label>
+    <input type="checkbox"  value="ICU" />ICU</label>
+  <label>
+    <input type="checkbox"  value="Food" />Food</label>
+     <label>
+       <input type="checkbox"   value="Ventilator"/>Ventilator</label>
+      <label>
+        <input type="checkbox"  value="Favipiravir">Favipiravir</label>
+ <label>
+    <input type="checkbox"  value="Ambulance" />Ambulance</label>
+     <label>
+       <input type="checkbox"   value="Plasma"/>Plasma</label>
+      <label>
+        <input type="checkbox"  value="Fabiflu">Fabiflu</label>
+      <label>Others :&nbsp;<input type="text" name="name" placeholder="others"  width="50%"/>
+<br/>
+<br/>
+<button>Search or Generate Links</button>
+
+</div>
+<hr/>
+    
+      <div>
+        <br/>
+        <label>
+          <input type="checkbox" name="prefer">Show verified tweets only Uncheck this for smaller cities
+(Tweet should contain "verified")
+</label>
+        <label>
+          <input type="checkbox" >Exclude unverified tweets
+(Tweet should not contain "not verified" and "unverified")</label>
+      <br/> 
+        <label>Tweets should NOT have these words:<br/></label>
+          <input type="checkbox" >needed (and its variants)
+        <label>
+          <input type="checkbox">required (and its variants)</label>
+         <label>Others :&nbsp;<input type="text" name="name" placeholder="others" class="form-control" width="50%"/>
+ 
+          <input type="checkbox">Show Tweets near me
+<br/>
+        </div>
+<hr/>    
+      
+
+
+ <div class="form-group">
+       <h2>Frequently Searched Cities</h2>
+       <ol type="1">
+       <li><a href="https://twitter.com/search?q=delhi+%28bed+OR+beds+OR+icu+OR+oxygen+OR+tocilizumab+OR+plasma%29+-%22not+verified%22+-%22unverified%22+-%22needed%22+-%22need%22+-%22needs%22+-%22required%22+-%22require%22+-%22requires%22+-%22requirement%22+-%22requirements%22&f=live">Delhi</a></li>
+       <li><a href="https://twitter.com/search?q=pune+%28bed+OR+beds+OR+icu+OR+oxygen+OR+tocilizumab+OR+plasma%29+-%22not+verified%22+-%22unverified%22+-%22needed%22+-%22need%22+-%22needs%22+-%22required%22+-%22require%22+-%22requires%22+-%22requirement%22+-%22requirements%22&f=live">Pune</a></li>
+       <li><a href="https://twitter.com/search?q=mumbai+%28bed+OR+beds+OR+icu+OR+oxygen+OR+tocilizumab+OR+plasma%29+-%22not+verified%22+-%22unverified%22+-%22needed%22+-%22need%22+-%22needs%22+-%22required%22+-%22require%22+-%22requires%22+-%22requirement%22+-%22requirements%22&f=live">Mumbai</a></li>
+       <li><a href="https://twitter.com/search?q=bangalore+%28bed+OR+beds+OR+icu+OR+oxygen+OR+tocilizumab+OR+plasma%29+-%22not+verified%22+-%22unverified%22+-%22needed%22+-%22need%22+-%22needs%22+-%22required%22+-%22require%22+-%22requires%22+-%22requirement%22+-%22requirements%22&f=live">Banglore</a></li>
+       <li><a href="https://twitter.com/search?q=thane+%28bed+OR+beds+OR+icu+OR+oxygen+OR+tocilizumab+OR+plasma%29+-%22not+verified%22+-%22unverified%22+-%22needed%22+-%22need%22+-%22needs%22+-%22required%22+-%22require%22+-%22requires%22+-%22requirement%22+-%22requirements%22&f=live">Thane</a></li>
+       <li><a href="https://twitter.com/search?q=hyderabad+%28bed+OR+beds+OR+icu+OR+oxygen+OR+tocilizumab+OR+plasma%29+-%22not+verified%22+-%22unverified%22+-%22needed%22+-%22need%22+-%22needs%22+-%22required%22+-%22require%22+-%22requires%22+-%22requirement%22+-%22requirements%22&f=live">Hyderabad</a></li>
+       <li><a href="https://twitter.com/search?q=nagpur+%28bed+OR+beds+OR+icu+OR+oxygen+OR+tocilizumab+OR+plasma%29+-%22not+verified%22+-%22unverified%22+-%22needed%22+-%22need%22+-%22needs%22+-%22required%22+-%22require%22+-%22requires%22+-%22requirement%22+-%22requirements%22&f=live">Nagpur</a></li>
+       <li><a href="https://twitter.com/search?q=lucknow+%28bed+OR+beds+OR+icu+OR+oxygen+OR+tocilizumab+OR+plasma%29+-%22not+verified%22+-%22unverified%22+-%22needed%22+-%22need%22+-%22needs%22+-%22required%22+-%22require%22+-%22requires%22+-%22requirement%22+-%22requirements%22&f=live">Lucknow</a></li>
+       <li><a href="https://twitter.com/search?q=ahmedabad+%28bed+OR+beds+OR+icu+OR+oxygen+OR+tocilizumab+OR+plasma%29+-%22not+verified%22+-%22unverified%22+-%22needed%22+-%22need%22+-%22needs%22+-%22required%22+-%22require%22+-%22requires%22+-%22requirement%22+-%22requirements%22&f=live">Ahmedabad</a></li>
+       <li><a href="https://twitter.com/search?q=chennai+%28bed+OR+beds+OR+icu+OR+oxygen+OR+tocilizumab+OR+plasma%29+-%22not+verified%22+-%22unverified%22+-%22needed%22+-%22need%22+-%22needs%22+-%22required%22+-%22require%22+-%22requires%22+-%22requirement%22+-%22requirements%22&f=live">Chennai</a></li>
+       <li><a href="https://twitter.com/search?q=kolkata+%28bed+OR+beds+OR+icu+OR+oxygen+OR+tocilizumab+OR+plasma%29+-%22not+verified%22+-%22unverified%22+-%22needed%22+-%22need%22+-%22needs%22+-%22required%22+-%22require%22+-%22requires%22+-%22requirement%22+-%22requirements%22&f=live">Kolkata</a></li>
+       <li><a href="https://twitter.com/search?q=goa+%28bed+OR+beds+OR+icu+OR+oxygen+OR+tocilizumab+OR+plasma%29+-%22not+verified%22+-%22unverified%22+-%22needed%22+-%22need%22+-%22needs%22+-%22required%22+-%22require%22+-%22requires%22+-%22requirement%22+-%22requirements%22&f=live">Goa</a></li>
+       <li><a href="https://twitter.com/search?q=jaipur+%28bed+OR+beds+OR+icu+OR+oxygen+OR+tocilizumab+OR+plasma%29+-%22not+verified%22+-%22unverified%22+-%22needed%22+-%22need%22+-%22needs%22+-%22required%22+-%22require%22+-%22requires%22+-%22requirement%22+-%22requirements%22&f=live">Jaipur</a></li>
+       </ol>
+       </div>
+       <hr/>
+       <br/>
+       <h2>Other Resources</h2>
+       <ul>
+       <li><b><a href="https://covidfacts.in/">covidfacts.in</a></b></li>
+       </ul>
+       <hr/>
+       <br/>
+       <h2>[VOLUNTARY] Places you can Donate to</h2>
+       <ul>
+       <li>Hemkunt Foundation has been helping out with Oxygen Cylinders. 80G donation receipts available.</li>
+<li>ACT grants has been helping with distribution of oxygen. Run by Indian startup ecosystem. International donations also accepted.</li>
+<li>Give India are providing sanitary napkins for women affected by the Pandemic.</li>
+<li>Feeding From Far has been feeding the poor and unemployed who are struggling to feed themselves during the lockdown. Accepts international payments.</li>
+<li>Swasth along with ACT Grants is procuring oxygen concentrators and channeling them to hospitals in India.</li>
+<li>Zomato Feeding India are providing hospitals and patients with oxygen and related supplies for free. Accepts international payments.</li>
+<li>Goonj is providing essentials like ration and hygiene material, with dignity, to daily wagers, migrant workers and people struggling for the basics in the villages of India. Eligible for tax deduction of 50% u/s 80G.</li>
+<li>Enrich Lives Foundation is providing grocery kits and meals to the poor communities.</li>
+<li>Paytm Foundation is raising ₹10 crore to donate Oxygen Concentrators across India. They'll match the contributions received through this initiative.</li>
+</ul>
+<hr/>
+<br/>
+</form>
+</div>
+</div>
+</body>
+</html>
